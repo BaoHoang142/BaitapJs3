@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt ("Nhập hệ số của x^2");
+        let b = +prompt ("Nhập hệ số của x");
+        let c = +prompt ("Nhập hệ số tự do ");
+        let delta = b*b - 4*a*c;
+        let root1, root2;
+        if (delta < 0) {
+            alert ("Phương trình vô nghiệm")
+        } else if (delta > 0) {
+            alert (`Phương trình có 2 nghiệm phân biệt là ${(-b + Math.sqrt(delta)) / (2*a)} và ${(-b - Math.sqrt(delta)) / (2*a)} `)
+            root1= (-b + Math.sqrt(delta)) / (2*a);
+            root2= (-b - Math.sqrt(delta)) / (2*a);
+        } else if (delta == 0) {
+            alert (`Phương trình có 2 nghiệm trùng nhau là ${-b / (2*a)}`)
+            root1 = root2 = -b / (2*a);
+        } else  {
+            alert ("Mời bạn nhập lại")
+        }
+        
+    </script>
+</body>
+</html>

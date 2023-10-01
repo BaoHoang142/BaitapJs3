@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number (prompt("Nhập vào số a"));
+        let b = Number (prompt("Nhập vào số b"));
+        let c = Number (prompt("Nhập vào số c"));
+        if (a>b&&b>c) {
+            console.log(`Max là ${a}\n, Min là ${c}`); 
+        } else if (a>b&&a>c&&c>b) {
+            console.log(`Max là ${a}\n, Min là ${b}`);          
+        } else if (a>b&&c>b&&c>a) {
+            console.log(`Max là ${c}\n, Min là ${b}`);
+        } else if (a<b&&c>b&&c>a) {
+            console.log(`Max là ${c}\n, Min là ${a}`);
+        } else if (b>a&&b>c&&c>a) {
+            console.log(`Max là ${b}\n, Min là ${a}`);  
+        } else if (b>a&&b>c&&a>c) {
+            console.log(`Max là ${b}\n, Min là ${c}`);  
+        }
+        else {
+            console.log("Mời bạn nhập lại");
+        } 
+    </script>
+</body>
+</html>
